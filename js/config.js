@@ -1,5 +1,5 @@
-/* Personal links. Add your real URLs before publishing. Leave blank to hide the link. */
+/* Public profile links */
 window.PORTFOLIO_CONFIG = {
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/prayer-josiah-a30389159",
   resume: "resume.pdf"
 };
