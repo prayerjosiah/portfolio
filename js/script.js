@@ -5,8 +5,13 @@
     if (value && value.trim()) {
       link.href = value;
       link.hidden = false;
-      if (key === 'resume') link.setAttribute('download', 'Josiah-Suder-Resume.pdf');
-      else { link.target = '_blank'; link.rel = 'noopener noreferrer'; }
+      if (key === 'resume' && link.dataset.resumeAction === 'view') {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.removeAttribute('download');
+      } else if (key === 'resume') {
+        link.setAttribute('download', 'Josiah-Suder-Resume.pdf');
+      } else { link.target = '_blank'; link.rel = 'noopener noreferrer'; }
     } else link.hidden = true;
   });
 
